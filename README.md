@@ -28,3 +28,24 @@ I engineered an automated Python ETL pipeline that extracts, cleans, and integra
 3. Generate mock client data: `python src/generate_mock_data.py`
 4. Update PostgreSQL credentials in `src/load.py`.
 5. Execute the pipeline: `python main.py`
+
+## Project Structure
+
+```
+ecommerce_etl_project/
+│
+├── data/                  
+│   ├── raw/                 # Where our business CSVs and JSONs files will live
+│
+├── src/                   
+│   ├── __init__.py          # Makes 'src' a Python module
+│   ├── generate_mock_data.py # Script to create our fake client data
+│   ├── extract.py           # Code to pull data from sources
+│   ├── transform.py         # Pandas logic to clean and merge
+│   └── load.py              # Database connection and insertion logic
+│
+├── main.py                  # The master script to run the whole pipeline
+├── requirements.txt         # List of Python libraries needed (pandas, etc.)
+├── .gitignore               # For skipping secrets
+└── README.md                # The business case study for your portfolio
+```
