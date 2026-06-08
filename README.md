@@ -47,5 +47,5 @@ ecommerce_etl_project/
 ├── main.py                  # The master script to run the whole pipeline
 ├── requirements.txt         # List of Python libraries needed (pandas, etc.)
 ├── .gitignore               # For skipping secrets
-└── README.md                # The business case study for your portfolio
+└── README.md                # The business case study
 ```
